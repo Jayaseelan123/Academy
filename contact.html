@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | SSAP Academy</title>
+    <title>Contact Us | Meadow Minds</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,13 +17,13 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo"><i class="fas fa-graduation-cap"></i> SSAP ACADEMY</a>
+                <a href="index.html" class="logo"><i class="fas fa-graduation-cap"></i> Meadow Minds</a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="dmit.html">DMIT</a></li>
                     <li class="dropdown">
-                        <a href="#">Programs <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                        <a href="#">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="student-development.html">Student Development Program</a></li>
                             <li><a href="faculty-development.html">Faculty Development Program</a></li>
@@ -40,7 +40,7 @@
         </div>
     </header>
 
-    <div class="page-header">
+    <div class="page-header header-contact">
         <div class="container">
             <h1>Contact Us</h1>
             <p>Get in touch with our experts to start your developmental journey.</p>
@@ -52,7 +52,7 @@
             <div class="contact-grid">
                 <!-- Contact Info -->
                 <div class="contact-info-card">
-                    <h3 style="margin-bottom: 30px; color: var(--primary-color);">Contact Details</h3>
+                    <h3 class="mb-30 text-primary">Contact Details</h3>
                     <div class="info-item">
                         <i class="fas fa-location-dot"></i>
                         <div>
@@ -78,19 +78,19 @@
                     <div class="qr-section">
                         <h4>Scan for Location</h4>
                         <div class="qr-code">QR CODE DATA</div>
-                        <p style="font-size: 0.9rem;">Scan this QR to get our Google Maps location.</p>
+                        <p class="text-sm">Scan this QR to get our Google Maps location.</p>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
                 <div class="contact-form-card">
-                    <h3 style="margin-bottom: 30px; color: var(--primary-color);">Send us a Message</h3>
+                    <h3 class="mb-30 text-primary">Send us a Message</h3>
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                         </div>
-                        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-row grid-2 gap-20">
                             <div class="form-group">
                                 <label for="phone">Phone Number *</label>
                                 <input type="tel" id="phone" name="phone" placeholder="Your mobile number" required>
@@ -117,7 +117,7 @@
                             <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send
+                        <button type="submit" class="btn btn-primary btn-full p-15">Send
                             Message</button>
                     </form>
                 </div>
@@ -127,7 +127,7 @@
             <div class="map-container">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.7411!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c63066440c89%3A0x956d8d68ef211650!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="100%" class="border-none" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -138,9 +138,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <div class="footer-logo">SSAP ACADEMY</div>
+                    <div class="footer-logo">Meadow Minds</div>
                     <p>Leading the way in scientific intelligence mapping and holistic student development.</p>
-                    <div style="margin-top: 20px; display: flex; gap: 15px;">
+                    <div class="flex gap-15 mt-20">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -177,11 +177,11 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2026 SSAP Academy. All Rights Reserved.</p>
+                <p>&copy; 2026 Meadow Minds. All Rights Reserved.</p>
                 <div class="developer-logo">
                     Developed by
                     <a href="https://aspirentech.com/">
-                        <img src="images/aspiren-logo.png" alt="Aspiren Tech" style="width: 30px;height: 40px;">
+                        <img src="images/aspiren-logo.png" alt="Aspiren Tech" class="dev-logo-img">
                     </a>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 /**
- * Main JavaScript for SSAP Academy
+ * Main JavaScript for Meadow Minds
  * Enhanced with advanced animations and creative interactions
  */
 
@@ -60,6 +60,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     icon.classList.remove('fa-times');
                 }
             });
+        });
+
+        // --- Mobile Dropdown: tap "Programs" to toggle ---
+        const dropdownParent = document.querySelector('.nav-links .dropdown');
+        if (dropdownParent) {
+            const dropdownTrigger = dropdownParent.querySelector('a');
+
+            dropdownTrigger.addEventListener('click', (e) => {
+                // Only intercept on mobile screens
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    e.stopPropagation(); // don't bubble to nav close logic
+                    dropdownParent.classList.toggle('dropdown-open');
+                }
+            });
+
+            // Sub-links: close the dropdown AND the whole mobile nav after clicking
+            dropdownParent.querySelectorAll('.dropdown-menu a').forEach(subLink => {
+                subLink.addEventListener('click', () => {
+                    dropdownParent.classList.remove('dropdown-open');
+                    navLinks.classList.remove('active');
+                    const icon = navToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-times');
+                    }
+                });
+            });
+        }
+
+        // Close dropdown when hamburger is toggled off
+        navToggle.addEventListener('click', () => {
+            if (!navLinks.classList.contains('active') && dropdownParent) {
+                dropdownParent.classList.remove('dropdown-open');
+            }
         });
     }
 

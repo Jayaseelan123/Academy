@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | SSAP Academy</title>
+    <title>About Us | Meadow Minds</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,13 +17,13 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo"><i class="fas fa-graduation-cap"></i> SSAP ACADEMY</a>
+                <a href="index.html" class="logo"><i class="fas fa-graduation-cap"></i> Meadow Minds</a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="dmit.html">DMIT</a></li>
                     <li class="dropdown">
-                        <a href="#">Programs <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                        <a href="#">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="student-development.html">Student Development Program</a></li>
                             <li><a href="faculty-development.html">Faculty Development Program</a></li>
@@ -42,31 +42,31 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>About SSAP Academy</h1>
+            <h1>About Meadow Minds</h1>
             <p>Empowering minds through scientific mapping and holistic guidance.</p>
         </div>
     </div>
 
     <!-- 1. Our Introduction -->
-    <section id="introduction" style="padding: 100px 0;">
+    <section id="introduction" class="section-padding">
         <div class="container">
-            <div class="grid-2" style="align-items: center; gap: 80px;">
+            <div class="grid-2 items-center gap-80">
                 <div class="reveal">
                     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
-                        alt="About SSAP Academy" style="border-radius: 30px; box-shadow: var(--shadow-hover);">
+                        alt="About Meadow Minds" class="border-radius-30 shadow-hover">
                 </div>
                 <div>
-                    <div class="section-title" style="text-align: left;">
+                    <div class="section-title text-left">
                         <h2>Our Introduction</h2>
                     </div>
-                    <p style="font-size: 1.1rem; color: #555; line-height: 1.8; margin-bottom: 25px;">
-                        Founded on the principles of neuro-scientific excellence, <strong>SSAP Academy</strong> is a
+                    <p class="intro-p">
+                        Founded on the principles of neuro-scientific excellence, <strong>Meadow Minds</strong> is a
                         pioneering organization dedicated to bridge the gap between human potential and professional
                         achievement. We specialize in identifying the innate talents of individuals through advanced
                         dermatoglyphics and behavioral psychology, providing a scientific roadmap for students,
                         educators, and working professionals alike.
                     </p>
-                    <p style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+                    <p class="intro-p">
                         Our team consists of certified master trainers and counsellors who have spent over a decade
                         researching the correlation between biological blueprints and cognitive intelligence.
                     </p>
@@ -74,19 +74,41 @@
             </div>
         </div>
     </section>
+    <section id="founder-message" class="text-white section-padding bg-primary">
+        <div class="container">
+            <div class="founder-box">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                        alt="Director" class="border-radius-20 shadow-large " width="">
+                    <div class="director-badge">DIRECTOR</div>
+                </div>
+                <div>
+                    <h2 class="text-white margin-bottom-10">Message from the Founder</h2>
+                    <p class="philosophy-text-alt intro-p italic opacity-90 margin-bottom-30 text-lg">
+                        "My mission has always been to ensure that no talent remains hidden under the debris of
+                        traditional expectations. At Meadow Minds, we aren't just selling assessments; we are providing
+                        'Life Maps'. We want to see a world where every child walks into their classroom and every
+                        professional walks into their office knowing exactly what they are built for."
+                    </p>
+                    <div class="font-bold text-md">— Dr. S. S. Patil</div>
+                    <div class="opacity-70">Founder & Managing Director, Meadow Minds</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- 2. Our Philosophy -->
-    <section id="philosophy" style="background: var(--light-bg); padding: 100px 0;">
+    <section id="philosophy" class="bg-light section-padding">
         <div class="container">
             <div class="section-title">
                 <h2>Our Philosophy</h2>
                 <p>Decoding the genius within through science and empathy.</p>
             </div>
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <div style="background: white; padding: 60px; border-radius: 30px; box-shadow: var(--shadow-hover);">
-                    <i class="fas fa-quote-left"
-                        style="font-size: 3rem; color: var(--primary-color); opacity: 0.2; margin-bottom: 30px; display: block;"></i>
-                    <p style="font-size: 1.5rem; color: var(--primary-color); font-weight: 600; line-height: 1.6;">
+            <div class="max-w-900 text-center">
+                <div class="philosophy-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="philosophy-text">
                         "Every individual is a one-of-a-kind masterpiece. Our philosophy is to replace the
                         'One-Size-Fits-All' education model with a personalized, data-driven approach that respects
                         biological uniqueness."</p>
@@ -96,24 +118,20 @@
     </section>
 
     <!-- 3 & 4. Mission & Vision -->
-    <section id="mission-vision" style="padding: 100px 0;">
+    <section id="mission-vision" class="section-padding">
         <div class="container">
-            <div class="grid-2" style="gap: 50px;">
-                <div
-                    style="background: var(--gradient-primary); color: white; padding: 60px; border-radius: 40px; border-bottom-right-radius: 0;">
-                    <i class="fas fa-bullseye"
-                        style="font-size: 3rem; margin-bottom: 30px; color: var(--accent-color);"></i>
-                    <h2 style="color: white; margin-bottom: 20px;">Our Mission</h2>
-                    <p style="font-size: 1.1rem; opacity: 0.9;">To empower 1 million individuals by 2030 with the
+            <div class="grid-2 gap-50">
+                <div class="mission-card">
+                    <i class="fas fa-bullseye icon-large text-accent"></i>
+                    <h2 class="text-white margin-bottom-20">Our Mission</h2>
+                    <p class="text-md opacity-90">To empower 1 million individuals by 2030 with the
                         knowledge of their inborn potential, enabling them to choose the right academic and career paths
                         with 100% confidence.</p>
                 </div>
-                <div
-                    style="background: white; padding: 60px; border-radius: 40px; border-top-left-radius: 0; box-shadow: var(--shadow-hover); border: 1px solid #eee;">
-                    <i class="fas fa-eye"
-                        style="font-size: 3rem; margin-bottom: 30px; color: var(--primary-color);"></i>
-                    <h2 style="color: var(--primary-color); margin-bottom: 20px;">Our Vision</h2>
-                    <p style="font-size: 1.1rem; color: #555;">To become the world's most trusted scientific
+                <div class="vision-card">
+                    <i class="fas fa-eye icon-large text-primary"></i>
+                    <h2 class="text-primary margin-bottom-20">Our Vision</h2>
+                    <p class="text-md text-gray">To become the world's most trusted scientific
                         intelligence mapping academy, creating a society where everyone thrives by operating in their
                         natural "zone of genius."</p>
                 </div>
@@ -122,53 +140,50 @@
     </section>
 
     <!-- 5. Our Approach (Scientific + Holistic) -->
-    <section id="approach" style="background-color: var(--light-bg); border-radius: 100px 0 100px 0; padding: 100px 0;">
+    <section id="approach" class="bg-light section-padding border-radius-custom">
         <div class="container">
             <div class="section-title">
                 <h2>Our Approach</h2>
                 <p>The perfect blend of Hard Science and Human Development.</p>
             </div>
-            <div class="grid-2" style="gap: 40px;">
-                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-hover);">
-                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
-                        <span
-                            style="background: #e3f2fd; color: #1e88e5; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 15px; font-size: 1.5rem;"><i
-                                class="fas fa-microscope"></i></span>
-                        <h3 style="margin: 0; color: var(--primary-color);">Scientific Focus</h3>
+            <div class="grid-2 gap-40">
+                <div class="approach-card-alt">
+                    <div class="flex items-center gap-20 mb-25">
+                        <span class="icon-box science"><i class="fas fa-microscope"></i></span>
+                        <h3 class="margin-0 text-primary">Scientific Focus</h3>
                     </div>
-                    <p style="color: #666; line-height: 1.7;">We utilize <strong>Dermatoglyphics Multiple Intelligence
+                    <p class="text-gray line-height-1-7">We utilize <strong>Dermatoglyphics Multiple Intelligence
                             Test (DMIT)</strong> and <strong>Psychometric Analysis</strong> to extract raw data about
                         brain dominance and neural concentrations. This eliminates guesswork and provides a factual
                         foundation for all our recommendations.</p>
                 </div>
-                <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-hover);">
-                    <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
-                        <span
-                            style="background: #fff3e0; color: #fb8c00; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 15px; font-size: 1.5rem;"><i
-                                class="fas fa-heart"></i></span>
-                        <h3 style="margin: 0; color: var(--primary-color);">Holistic Focus</h3>
+                <div class="approach-card-alt">
+                    <div class="flex items-center gap-20 mb-25">
+                        <span class="icon-box holistic"><i class="fas fa-heart"></i></span>
+                        <h3 class="margin-0 text-primary">Holistic Focus</h3>
                     </div>
-                    <p style="color: #666; line-height: 1.7;">Our intervention doesn't end with a report. We provide
+                    <p class="text-gray line-height-1-7">Our intervention doesn't end with a report. We provide
                         <strong>Experiential Training</strong> and <strong>Mentorship</strong> to develop Emotional EQ,
-                        Soft Skills, and Resilience, ensuring that the individual is not just smart, but life-ready.</p>
+                        Soft Skills, and Resilience, ensuring that the individual is not just smart, but life-ready.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 6. Why Intelligence Mapping Matters Today -->
-    <section id="importance" style="padding: 100px 0;">
+    <section id="importance" class="section-padding">
         <div class="container">
             <div class="section-title">
                 <h2>Why Intelligence Mapping Matters Today</h2>
                 <p>Navigating the complex world with biological certainty.</p>
             </div>
-            <div class="grid-2" style="align-items: center;">
+            <div class="grid-2 items-center">
                 <div>
                     <img src="https://images.unsplash.com/photo-1454165833267-035119777174?auto=format&fit=crop&w=800&q=80"
-                        alt="Future Readiness" style="border-radius: 30px; box-shadow: var(--shadow-hover);">
+                        alt="Future Readiness" class="border-radius-30 shadow-hover">
                 </div>
-                <div style="padding-left: 40px;">
+                <div class="feature-list-container">
                     <ul class="feature-list">
                         <li><i class="fas fa-check-circle"></i> <strong>Avoid Career Mismatch:</strong> 80% of
                             individuals are in the wrong job by age 30. We prevent this from day one.</li>
@@ -184,62 +199,30 @@
         </div>
     </section>
 
-    <!-- 7. Founder / Director Message -->
-    <section id="founder-message" style="background: var(--primary-color); color: white; padding: 100px 0;">
-        <div class="container">
-            <div class="founder-section"
-                style="background: rgba(255,255,255,0.05); padding: 60px; border-radius: 30px; display: grid; grid-template-columns: 350px 1fr; gap: 60px; align-items: center; backdrop-filter: blur(10px);">
-                <div style="position: relative;">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
-                        alt="Director" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-                    <div
-                        style="position: absolute; bottom: -20px; right: -20px; background: var(--accent-color); color: var(--primary-color); padding: 15px 30px; border-radius: 10px; font-weight: 800;">
-                        DIRECTOR</div>
-                </div>
-                <div>
-                    <h2 style="color: white; margin-bottom: 10px;">Message from the Founder</h2>
-                    <p
-                        style="font-size: 1.2rem; line-height: 1.8; font-style: italic; opacity: 0.9; margin-bottom: 30px;">
-                        "My mission has always been to ensure that no talent remains hidden under the debris of
-                        traditional expectations. At SSAP Academy, we aren't just selling assessments; we are providing
-                        'Life Maps'. We want to see a world where every child walks into their classroom and every
-                        professional walks into their office knowing exactly what they are built for."
-                    </p>
-                    <div style="font-weight: 700; font-size: 1.1rem;">— Dr. S. S. Patil</div>
-                    <div style="opacity: 0.7;">Founder & Managing Director, SSAP Academy</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- 8. Certifications / Affiliations -->
-    <section id="certifications" style="padding: 100px 0;">
+    <section id="certifications" class="section-padding">
         <div class="container">
             <div class="section-title">
                 <h2>Our Certifications & Affiliations</h2>
                 <p>Recognized globally for quality and scientific accuracy.</p>
             </div>
-            <div class="cert-grid"
-                style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; opacity: 0.6;">
-                <div class="cert-item" style="text-align: center;">
-                    <i class="fas fa-award"
-                        style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                    <h4 style="margin: 0;">ISO 9001:2015</h4>
+            <div class="cert-grid flex justify-around flex-wrap gap-30 opacity-60">
+                <div class="cert-item text-center">
+                    <i class="fas fa-award icon-large text-primary margin-bottom-15"></i>
+                    <h4 class="margin-0">ISO 9001:2015</h4>
                 </div>
-                <div class="cert-item" style="text-align: center;">
-                    <i class="fas fa-university"
-                        style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                    <h4 style="margin: 0;">IAO Accredited</h4>
+                <div class="cert-item text-center">
+                    <i class="fas fa-university icon-large text-primary margin-bottom-15"></i>
+                    <h4 class="margin-0">IAO Accredited</h4>
                 </div>
-                <div class="cert-item" style="text-align: center;">
-                    <i class="fas fa-shield-halved"
-                        style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                    <h4 style="margin: 0;">Certified DMIT Practitioners</h4>
+                <div class="cert-item text-center">
+                    <i class="fas fa-shield-halved icon-large text-primary margin-bottom-15"></i>
+                    <h4 class="margin-0">Certified DMIT Practitioners</h4>
                 </div>
-                <div class="cert-item" style="text-align: center;">
-                    <i class="fas fa-certificate"
-                        style="font-size: 3rem; color: var(--primary-color); margin-bottom: 15px;"></i>
-                    <h4 style="margin: 0;">NCVT Affiliated</h4>
+                <div class="cert-item text-center">
+                    <i class="fas fa-certificate icon-large text-primary margin-bottom-15"></i>
+                    <h4 class="margin-0">NCVT Affiliated</h4>
                 </div>
             </div>
         </div>
@@ -250,9 +233,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <div class="footer-logo">SSAP ACADEMY</div>
+                    <div class="footer-logo">Meadow Minds</div>
                     <p>Leading the way in scientific intelligence mapping and holistic student development.</p>
-                    <div style="margin-top: 20px; display: flex; gap: 15px;">
+                    <div class="flex gap-15 mt-20">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -289,11 +272,11 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2026 SSAP Academy. All Rights Reserved.</p>
+                <p>&copy; 2026 Meadow Minds. All Rights Reserved.</p>
                 <div class="developer-logo">
                     Developed by
                     <a href="https://aspirentech.com/">
-                        <img src="images/aspiren-logo.png" alt="Aspiren Tech" style="width: 30px;height: 40px;">
+                        <img src="images/aspiren-logo.png" alt="Aspiren Tech" class="dev-logo-img">
                     </a>
                 </div>
             </div>
